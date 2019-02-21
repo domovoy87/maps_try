@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Geolocation</title>
+      <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+      <meta charset="utf-8">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+      <link rel="stylesheet" href="assets/style/main.css">
+   </head>
+   <body>
+      <div class="wrap hide">
+         <div class="popup-edit">
+            <p class="title-popup">Введите новое название</p>
+            <form class="edit-form">
+               <input class="input-edit" type="text">
+               <div class="edit-button-box ">
+                  <button type="submit" class="okBtn btn">Да</button>
+                  <button class="noBtn btn">Отмена</button>
+               </div>
+            </form>
+         </div>
+      </div>
+      <div id="map"></div>
+      <div class="wrap-input">
+         <p class="input-title">введите название места и нажмите на карте</p>
+         <input class="inputText" type="text">
+      </div>
+      <div class="container">
+         <ul class="markerList">  
+         </ul>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDl16cLIGEHsYeUzfMq2m67BIXtAqh4c3Q&callback=initMap"></script>
+      <script src="./assets/js/all.js"></script>
+   </body>
+</html>

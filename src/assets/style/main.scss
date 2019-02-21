@@ -1,0 +1,160 @@
+@import 'common/variables.scss';
+
+#map {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+    overflow: hidden;
+};
+.wrap-btn {
+    display: flex;
+};
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+};
+.input-title {
+    padding: 0;
+    margin: 2px;
+    font-size: 11px;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+};
+.inputText {
+    width: 225px;
+};
+body {
+    display: flex;
+};
+li {
+    align-items: center;
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    opacity: 0;
+    padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid lightgray;
+    background: white;
+    transition: 0.8s;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column
+};
+.btn {
+    font-size: 20px;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    position: relative;
+    border-radius: 3px;
+    margin: 2px;
+    width: 34px;
+    font-size: 17px;
+    transition: 0.4s;
+    outline: none;
+};
+.markerList {
+    list-style: none;
+    margin: 5px;
+    padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 6px;
+}
+li.list_item-favourite {
+    opacity: 1;
+    background: lightgoldenrodyellow;
+}
+.container {
+    border-radius: 2px;
+    top: 63px;
+    max-height: 88vh;
+    right: 10px;
+    position: absolute;
+    overflow-y: auto;
+    width: 247px;
+};
+.wrap {
+    display: flex;
+    background: rgba(247, 247, 247 , 0.8);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+    transition: visibility 0s linear 0s, opacity 400ms;
+};
+.wrap.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 300ms, opacity 400ms;
+};
+.popup-edit {
+    color: black;
+    background: #fff;
+    box-shadow: 0 20px 100px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    transition: box-shadow 500ms;
+};
+.title-popup {
+    margin: 0;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 45px;
+    font-size: $fontSize;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;  
+};
+.input-edit {
+    font-size: $fontSize;
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+};
+.okBtn {
+    border-bottom-left-radius: 16px;
+    border-right: 1px lightgray solid;
+};
+.noBtn {
+    border-bottom-right-radius: 16px;
+    border-left: 1px lightgray solid;
+};
+.okBtn.btn {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    flex-basis: 50%;
+    border-top: 1px lightgray solid;
+    padding: 15px;
+    margin: 0;
+    transition: background 300ms;
+    outline: none;
+};
+.noBtn.btn {
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    font-weight: $fontWeight;
+    flex-basis: 50%;
+    border-top: 1px lightgray solid;
+    padding: 15px;
+    margin: 0;
+    transition: background 300ms;
+    outline: none;
+};
+.edit-button-box {
+    display: flex;
+    flex-basis: 100%;
+};
+
+@import 'components/hover.scss';
